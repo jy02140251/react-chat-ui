@@ -1,0 +1,72 @@
+:root {
+  /* Primary Colors */
+  --chat-primary: #1976d2;
+  --chat-primary-light: #42a5f5;
+  --chat-primary-dark: #1565c0;
+  --chat-accent: #ff4081;
+
+  /* Background Colors */
+  --chat-bg: #f5f5f5;
+  --chat-sidebar-bg: #ffffff;
+  --chat-message-area-bg: #e8eaf6;
+  --chat-input-bg: #ffffff;
+
+  /* Message Bubbles */
+  --chat-bubble-sent: #1976d2;
+  --chat-bubble-sent-text: #ffffff;
+  --chat-bubble-received: #ffffff;
+  --chat-bubble-received-text: #212121;
+  --chat-bubble-radius: 18px;
+
+  /* Text Colors */
+  --chat-text-primary: #212121;
+  --chat-text-secondary: #757575;
+  --chat-text-hint: #9e9e9e;
+  --chat-link-color: #1976d2;
+
+  /* Borders & Shadows */
+  --chat-border-color: #e0e0e0;
+  --chat-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --chat-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --chat-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  /* Spacing */
+  --chat-spacing-xs: 4px;
+  --chat-spacing-sm: 8px;
+  --chat-spacing-md: 16px;
+  --chat-spacing-lg: 24px;
+  --chat-spacing-xl: 32px;
+
+  /* Typography */
+  --chat-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --chat-font-size-sm: 12px;
+  --chat-font-size-md: 14px;
+  --chat-font-size-lg: 16px;
+
+  /* Sidebar */
+  --chat-sidebar-width: 320px;
+
+  /* Animation */
+  --chat-transition-fast: 150ms ease;
+  --chat-transition-normal: 250ms ease;
+  --chat-transition-slow: 400ms ease;
+
+  /* Z-Index Layers */
+  --chat-z-dropdown: 100;
+  --chat-z-modal: 200;
+  --chat-z-tooltip: 300;
+}
+
+/* Dark Theme Override */
+[data-theme="dark"] {
+  --chat-bg: #121212;
+  --chat-sidebar-bg: #1e1e1e;
+  --chat-message-area-bg: #1a1a2e;
+  --chat-input-bg: #2d2d2d;
+  --chat-bubble-received: #2d2d2d;
+  --chat-bubble-received-text: #e0e0e0;
+  --chat-text-primary: #e0e0e0;
+  --chat-text-secondary: #a0a0a0;
+  --chat-text-hint: #707070;
+  --chat-border-color: #333333;
+}
