@@ -1,0 +1,38 @@
+{
+  "name": "react-chat-ui",
+  "version": "1.0.0",
+  "description": "Modern React + TypeScript chat UI component library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.1",
+    "jest": "^29.7.0",
+    "@testing-library/react": "^14.1.2",
+    "eslint": "^8.56.0"
+  },
+  "keywords": ["react", "chat", "ui", "components", "typescript", "messaging"],
+  "author": "jy02140251",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jy02140251/react-chat-ui.git"
+  }
+}
